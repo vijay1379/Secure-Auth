@@ -3,3 +3,4 @@ flask_wtf
 flask-mysqldb
 pyjwt
 WTForms
+waitress
