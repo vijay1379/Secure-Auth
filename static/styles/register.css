@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+  background-image: url('/static/images/registration.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0;
+  color: #fff;
+  
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Transparent border */
+  border-radius: 15px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.container h2 {
+  text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Transparent bottom border */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  outline: none; /* Remove outline */
+  color: white; /* Text color */
+  padding: 5px;
+}
+
+.form-control:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8); /* Focus state bottom border */
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.alert-danger {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: white;
+}
+
+.alert-danger ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Blue button color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px; /* Increase padding for better visibility */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.btn-primary:hover {
+  background-color: #0069d9; /* Hover state background color */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Gray button color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px; /* Increase padding for better visibility */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Hover state background color */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Adjust the gap between buttons */
+}

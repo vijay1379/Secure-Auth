@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/transactions.css') }}">
+</head>
+<body>
+    <div class="logout-container">
+        <form action="{{ url_for('logout') }}" method="GET">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+    <h1 class="welcome-message">Welcome, <span class="username">{{ user[1] }}  &#128075 !! </span></h1>
+    <div class="card">
+        <div class="account-info">
+            <h3>Account Number: {{ user[4] }}</h3>
+            <h3>Current Balance: {{ user[5] }}</h3>
+        </div>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="message-container">
+                    {% for message in messages %}
+                        <div class="message">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+        <form action="{{ url_for('transactions', token=token) }}" method="POST">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <div class="transaction-buttons">
+                <button type="submit" name="transactionType" value="deposit">Deposit</button>
+                <button type="submit" name="transactionType" value="withdraw">Withdraw</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
