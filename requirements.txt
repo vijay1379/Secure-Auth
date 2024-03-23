@@ -1,7 +1,5 @@
 flask
 flask_wtf
-flask_mysqldb
+flask-mysqldb
 pyjwt
 WTForms
-pycryptodome
-this 
