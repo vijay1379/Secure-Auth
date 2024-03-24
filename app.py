@@ -153,6 +153,7 @@ def transactions():
     cursor.close()
     return render_template('transactions.html', user=user, token=token)
 
+
+
 if __name__ == "__main__":
    app.run(debug=True)
-
