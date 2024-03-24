@@ -4,3 +4,5 @@ flask-mysqldb
 pyjwt
 WTForms
 waitress
+gunicorn
+pycryptodome
