@@ -6,4 +6,4 @@ WTForms
 waitress
 gunicorn
 pycryptodome
-email_validator
+email-validator
